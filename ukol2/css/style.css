@@ -1,0 +1,93 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.text-primary {
+    background-color: none;
+    color: navy;
+}
+
+#text-secondary {
+    background-color: none;
+    color: mediumslateblue;
+}
+
+#navbar {
+    background-color: aquamarine;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+#navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#navbar ul li a {
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+    font-family: 'Kanit', sans-serif;    
+}
+
+#navbar ul li a:hover {
+    background-color: cadetblue;
+    border-radius: 5px;
+
+}
+
+@media only screen and (max-width:700px) {
+    #navbar ul {
+        margin-top: 1rem;
+    }
+}
+
+table, th, td {
+    border: 2px solid grey;
+}
+h1 {
+    color: green;
+    padding: 20px
+
+}
+body {
+    background-color: lightcyan;
+    width: auto;
+}
+h2, h3 {
+    margin: 20px;
+    font-family: 'Gabarito', cursive;
+}
+h2 {
+    padding: 20px
+}
+p {
+    padding-left: 30px;
+    padding-right: 60px;
+    font-family: 'Gabarito', cursive;
+}
