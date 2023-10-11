@@ -6,22 +6,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#logo {
+:root {
+    --primary-color: aquamarine;
+    --secondary-color: mediumslateblue;
+}
 
+#logo {
     font-weight: bold;
     font-size: 2rem;
 }
 
 .text-primary {
     background-color: none;
-    color: navy;
+    color: var(--primary-color);
 }
 
 #text-secondary {
@@ -30,7 +33,7 @@
 }
 
 #navbar {
-    background-color: aquamarine;
+    background-color: grey;
     color: black;
     display: flex;
     justify-content: space-between;
@@ -52,13 +55,13 @@
 #navbar ul li a {
     padding: 0.75rem;
     margin: 0 0.25rem;
+    size: 20px;
     font-family: 'Kanit', sans-serif;    
 }
 
 #navbar ul li a:hover {
     background-color: cadetblue;
     border-radius: 5px;
-
 }
 
 @media only screen and (max-width:700px) {
@@ -70,24 +73,65 @@
 table, th, td {
     border: 2px solid grey;
 }
-h1 {
-    color: green;
-    padding: 20px
 
+h1 {
+    color: white;
+    padding: 10px
 }
+
 body {
-    background-color: lightcyan;
     width: auto;
 }
+
 h2, h3 {
     margin: 20px;
     font-family: 'Gabarito', cursive;
 }
-h2 {
-    padding: 20px
-}
+
 p {
     padding-left: 30px;
     padding-right: 60px;
     font-family: 'Gabarito', cursive;
 }
+
+#showcase {
+    background: #333 url('../img/ai-picture.jpg') no-repeat center center/cover;
+    height: 150vh;
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    background-color: rgba(0,0,0,.5);
+}
+
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 1.3rem;
+    line-height: 1.1;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 7px;
+}
+
+ .btn:hover {
+    background-color: aqua;
+ }
+
