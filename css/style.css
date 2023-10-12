@@ -1,5 +1,4 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,14 +12,22 @@
 }
 
 :root {
-    --primary-color: #8A307F;
-    --secondary-color: #6883BC;
+    --primary-color: #6883BC;
+    --secondary-color: #8A307F;
 }
 
 #logo {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 3rem;
     display: flex;
+    font-family: 'Kanit', sans-serif;
+    padding: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#logo2 {
+    color: var(--secondary-color);
 }
 
 .text-primary {
@@ -31,12 +38,12 @@
 
 .text-secondary {
     background-color: none;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-family: 'Gabarito', cursive;
 }
 
 #navbar {
-    background-color: #79A7D3;
+    background-color: var(--primary-color);
     color: black;
     display: flex;
     justify-content: space-between;
@@ -64,7 +71,7 @@
 }
 
 #navbar ul li a:hover {
-    background-color: cadetblue;
+    background-color: var(--secondary-color);
     border-radius: 5px;
 }
 
@@ -102,7 +109,8 @@ p {
 
 #zdroje {
     text-align: left;
-    color: var(--primary-color)
+    color: black;
+    font-size: 2rem;
 }
 
 #showcase {
@@ -125,12 +133,14 @@ p {
     font-size: 4rem;
     margin-bottom: 1.3rem;
     line-height: 1.1;
-    font-family: 'Gabarito', cursive;
+    font-family: 'Kanit', sans-serif;  
+    color: var(--primary-color);
 }
 
 .lead {
     font-size: 1.3rem;
     margin-bottom: 2rem;
+    color: var(--secondary-color);
 }
 
 .btn {
@@ -141,6 +151,7 @@ p {
     padding: 0.5rem 2rem;
     border: none;
     border-radius: 7px;
+    font-family: 'Kanit', sans-serif;  
 }
 
  .btn:hover {
