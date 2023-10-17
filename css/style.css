@@ -110,7 +110,7 @@ p {
 #zdroje {
     text-align: left;
     color: black;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #showcase {
@@ -149,6 +149,7 @@ p {
     text-decoration: none;
     background-color: var(--primary-color);
     padding: 0.5rem 2rem;
+    font-size: 1.5rem;
     border: none;
     border-radius: 7px;
     font-family: 'Kanit', sans-serif;  
@@ -193,3 +194,54 @@ p {
     border-radius: 50%;
     margin-bottom: 
 }
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #f4f4f4;
+}
+
+.py-1 {
+    padding: 0.5rem 0;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+}
+
+#who {
+    display: flex;
+}
+
+#who {
+    flex: 1;
+}
+
+#who .who-img{
+    background: url('../img/ai2-picture.jpg');
+}
+
+
+
+
+
+
+
