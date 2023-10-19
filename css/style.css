@@ -30,6 +30,10 @@
     color: var(--secondary-color);
 }
 
+.icon-code {
+    padding-top: 0.5rem;
+}
+
 .text-primary {
     background-color: none;
     color: var(--primary-color);
@@ -244,7 +248,7 @@ p {
 
 .list li {
     padding: 0.5rem 0;
-    border-bottom: #444 dotted 1px;
+    border-bottom: #444 dotted 2px;
     font-family: 'Inter', sans-serif;
     font-size: 1.2rem;
 }
