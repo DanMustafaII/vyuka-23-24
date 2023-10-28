@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrační formulář</title>
+    <style>
+        .btn {
+            margin-top: 5px;
+        }
+        .my-1 {
+            margin: 8px 0;
+        }
+        div {
+            margin: 8px;
+        }
+        .pi {
+            font-weight: bold;
+            font-size: large;
+        }
+        fieldset {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registrační formulář</h1>
+    <form>
+        <fieldset>
+            <legend class="pi">Personální informace</legend>
+            <div><label for="krestni">Křestní jméno</label></div>
+            <div><input type="text" name="krestni" id="krestni" placeholder="Vaše křestní jméno"></div>
+            <div><label for="krestni">Příjmení</label></div>
+            <div><input type="password" name="prijmeni" id="prijmeni" placeholder="Vaše příjmení"></div>
+            
+        </fieldset>
+        <div class="my-1">
+            <label for="muz">Muž</label>
+            <input type="radio" name="pohlavi" id="muz">
+            <label for="muz">Žena</label>
+            <input type="radio" name="pohlavi" id="zena">
+            <label for="muz">Nepreferovat</label>
+            <input type="radio" name="pohlavi" id="nepreferovat">
+        </div>
+        <div class="my-1">
+            <label for=""></label>
+            <input type="checkbox" name="" id="">
+            <label for=""></label>
+            <input type="checkbox" name="" id="">
+            <label for=""></label>
+            <input type="checkbox" name="" id="">
+        </div>
+
+        <div class="btn"><input type="submit" value="Odeslat"></div>
+    </form>
+
+
+
+</body>
+</html>
