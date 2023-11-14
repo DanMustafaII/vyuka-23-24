@@ -165,22 +165,6 @@ p {
     color: var(--secondary-color);
 }
 
-.btn {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    background-color: var(--primary-color);
-    padding: 0.5rem 2rem;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 7px;
-    font-family: 'Kanit', sans-serif;  
-}
-
- .btn:hover {
-    background-color: var(--secondary-color);
- }
-
 .container {
     max-width: 1000px;
     margin: auto;
@@ -266,15 +250,3 @@ p {
     height: 110vh;
     width: 40vh;
 }
-
-table {
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    margin-left: 4rem;
-    
-}
-
-
-
-
-
