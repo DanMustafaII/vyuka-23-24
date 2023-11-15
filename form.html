@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./css/style_form.css">
+        <link rel="stylesheet" href="./css/style.css">
     <style>
         .btn {
             margin-top: 6px;
@@ -32,47 +32,87 @@
 
     <nav id="navbar">
         <div class="logec">
-            <p id="logo" href="index.html"><i class="fa-solid fa-code fa-fade fa-2m icon-code"></i>&nbsp;Umělá&nbsp;|&nbsp;<span id="logo2">Inteligence</span></p>
+            <a id="logo" href="index.html"><i class="fa-solid fa-code fa-fade fa-2m icon-code"></i>&nbsp;Umělá&nbsp;|&nbsp;<span id="logo2">Inteligence</span></a>
         </div>
         <ul>
             <li><a href="index.html"><i class="fa-solid fa-house fa-fade"></i></a></li>
-            <li><a href="https://www.shutterstock.com/cs/search/um%C4%9Bl%C3%A1-inteligence" target="_blank">Obrázky</a></li>
-            <li><a href="https://cs.wikipedia.org/wiki/Um%C4%9Bl%C3%A1_inteligence" target="_blank">Zdroje</a></li>
             <li><a href="form.html">Formulář</a></li>
+            <li><a href="index.html#naucitese">Naučit se víc</a></li>
+            <li><a href="index.html#historie_zajimavosti">Historie a zajímavosti</a></li>
+            <li><a href="https://cs.wikipedia.org/wiki/Um%C4%9Bl%C3%A1_inteligence" target="_blank">Zdroje</a></li>
         </ul>
     </nav>
+
+    <table class="my-table">
+        <tr>
+            <th>Umělá Inteligence</th>
+            <th>Firma</th>
+            <th>Funkce</th>
+            <th>Jazyková Podpora</th>
+            <th>Interakce s Uživatelem</th>
+        </tr>
+        <tr>
+            <td>ChatGPT</td>
+            <td>OpenAI</td>
+            <td>Natáčení textových konverzací, generování obsahu</td>
+            <td>Široká podpora pro různé jazyky</td>
+            <td>Psaní textu, odpovědi na otázky, vytváření kódů</td>
+        </tr>
+        <tr>
+            <td>Siri</td>
+            <td>Apple</td>
+            <td>Hlasové asistentství, ovládání zařízení</td>
+            <td>Široká podpora pro různé jazyky.</td>
+            <td>Hlasové příkazy, odpovědi na otázky</td>
+        </tr>
+        <tr>
+            <td>IBM Watson</td>
+            <td>IBM</td>
+            <td>Analýza dat, strojové učení, chatboty</td>
+            <td>Široká podpora pro různé jazyky.</td>
+            <td>Analýza dat, odpovědi na otázky, chatování</td>
+        </tr>
+    </table>
 
     <h1>Registrační formulář</h1>
     <form>
         <fieldset>
-            <legend class="pi">Personální informace</legend>
+            <legend>Personální informace</legend>
             <div><label for="krestni">Křestní jméno</label></div>
             <div><input type="text" name="krestni" id="krestni" placeholder="Vaše křestní jméno"></div>
             <div><label for="krestni">Příjmení</label></div>
-            <div><input type="password" name="prijmeni" id="prijmeni" placeholder="Vaše příjmení"></div>
-            
+            <div><input type="text" name="prijmeni" id="prijmeni" placeholder="Vaše příjmení"></div>
         </fieldset>
-        <div class="my-1">
+        <div class="myform">
             <label for="muz">Muž</label>
             <input type="radio" name="pohlavi" id="muz">
             <label for="muz">Žena</label>
             <input type="radio" name="pohlavi" id="zena">
-            <label for="muz">Nepreferovat</label>
-            <input type="radio" name="pohlavi" id="nepreferovat">
+            <label for="muz">Jiné</label>
+            <input type="radio" name="pohlavi" id="jine">
         </div>
-        <div class="my-1">
-            <label for=""></label>
-            <input type="checkbox" name="" id="">
-            <label for=""></label>
-            <input type="checkbox" name="" id="">
-            <label for=""></label>
-            <input type="checkbox" name="" id="">
+        <div class="myform">
+            <p class="p-form">Umělá inteligence, kterou používám/znám</p>
+            <input type="checkbox" name="ai" id="deep">
+            <label for="">Deep AI</label>
+            <br>
+            <input type="checkbox" name="ai" id="xaigrok">
+            <label for="">xAI Grok</label>
+            <br>
+            <input type="checkbox" name="ai" id="siri">
+            <label for="">Siri</label>
+            <br>
+            <input type="checkbox" name="ai" id="imb">
+            <label for="">IMB Watson</label>
+            <br>
+            <input type="checkbox" name="ai" id="chatgpt">
+            <label for="">ChatGPT</label>
+            <br>
+            <input type="checkbox" name="ai" id="jine">
+            <label for="">Další, jiné</label>
         </div>
-
-        <div class="btn"><input type="submit" value="Odeslat"></div>
+        <div class="div-submit"><input type="submit" value="Odeslat"></div>
     </form>
-
-
 
 </body>
 </html>

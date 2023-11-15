@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Noto+Sans+Georgian:wght@100&display=swap');
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +53,11 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 8px;
+    padding: 0.3rem;
+    position: fixed;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 #navbar a {
@@ -85,9 +90,10 @@
     border-radius: 5px;
 }
 
-@media only screen and (max-width:700px) {
-    #navbar ul {
-        margin-top: 1rem;
+@media only screen and (max-width: 600px) {
+    #navbar {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -123,13 +129,15 @@ p {
     padding-right: 60px;
     font-family: 'Inter', sans-serif;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 #zdroje {
     text-align: left;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 1px;
 }
 
 #showcase {
@@ -185,10 +193,15 @@ p {
     max-width: 1000px;
     margin: auto;
     padding: 0 2rem;
+    padding-top: 1rem;
 }
 
 .text-center {
     text-align: center;
+}
+
+.text-top {
+    margin-top: 6rem;
 }
 
 .m-heading {
@@ -201,22 +214,22 @@ p {
     padding: 1.5rem 0;
 }
 
-#what .items {
+#naucitese .items {
     display: flex;
     padding-bottom: 3rem;
+    margin-top: 3rem;
 }
 
-#what .item {
+#naucitese .item {
     text-align: center;
-    padding: 1rem;
+    padding: 0rem;
     flex: 1;
 }
 
-#what .items .item i {
+#naucitese .items .item i {
     background-color: var(--primary-color);
     padding: 2rem;
     border-radius: 50%;
-    margin-bottom: 
 }
 
 .bg-light {
@@ -253,15 +266,16 @@ p {
     font-size: 1.2rem;
 }
 
-#who {
+#historie_zajimavosti {
     display: flex;
+    padding-top: 5rem;
 }
 
-#who div {
+#historie_zajimavosti div {
     flex: 1;
 }
 
-#who .who-img{
+#historie_zajimavosti .historie_zajimavosti-img{
     background: #333 url('../img/ai2-picture.jpg') no-repeat center center/cover;
     height: 110vh;
     width: 40vh;
@@ -274,7 +288,51 @@ table {
     
 }
 
+.my-table {
+    width: 100%;
+    border-collapse: collapse;
+    justify-content: center;
+    width: 93%;
+}
 
+.my-table td,
+.my-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
 
+.my-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
+.my-table tr:hover {
+    background-color: #ddd;
+}
 
+.my-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.p-form {
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-size: 1rem;
+    justify-content: left;
+    margin: 10px;
+}
+
+.myform {
+    padding: 0.7rem;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+}
+
+.div-submit {
+    padding: 0.50rem;
+    padding-bottom: 5rem;
+}
