@@ -6,7 +6,7 @@
     <title>Registrační formulář</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
         <link rel="stylesheet" href="./css/style.css">
     <style>
         .btn {
@@ -26,7 +26,6 @@
             display: flex;
         }
     </style>
-
 </head>
 <body>
 
@@ -80,7 +79,7 @@
             <legend>Personální informace</legend>
             <div><label for="krestni">Křestní jméno</label></div>
             <div><input type="text" name="krestni" id="krestni" placeholder="Vaše křestní jméno"></div>
-            <div><label for="krestni">Příjmení</label></div>
+            <div><label for="prijmeni">Příjmení</label></div>
             <div><input type="text" name="prijmeni" id="prijmeni" placeholder="Vaše příjmení"></div>
         </fieldset>
         <div class="myform">
@@ -92,24 +91,24 @@
             <input type="radio" name="pohlavi" id="jine">
         </div>
         <div class="myform">
-            <p class="p-form">Umělá inteligence, kterou používám/znám</p>
+            <h5>Umělá inteligence, kterou používám/znám</h5>
             <input type="checkbox" name="ai" id="deep">
-            <label for="">Deep AI</label>
+            <label for="deep">Deep AI</label>
             <br>
             <input type="checkbox" name="ai" id="xaigrok">
-            <label for="">xAI Grok</label>
+            <label for="xaigrok">xAI Grok</label>
             <br>
             <input type="checkbox" name="ai" id="siri">
-            <label for="">Siri</label>
+            <label for="siri">Siri</label>
             <br>
             <input type="checkbox" name="ai" id="imb">
-            <label for="">IMB Watson</label>
+            <label for="imb">IMB Watson</label>
             <br>
             <input type="checkbox" name="ai" id="chatgpt">
-            <label for="">ChatGPT</label>
+            <label for="chatgpt">ChatGPT</label>
             <br>
-            <input type="checkbox" name="ai" id="jine">
-            <label for="">Další, jiné</label>
+            <input type="checkbox" name="ai" id="dalsi">
+            <label for="dalsi">Další, jiné</label>
         </div>
         <div class="div-submit"><input type="submit" value="Odeslat"></div>
     </form>

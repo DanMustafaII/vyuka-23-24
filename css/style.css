@@ -124,6 +124,13 @@ h4 {
     font-family: 'Inter', sans-serif;
 }
 
+h5 {
+    color: black;
+    margin: 9px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
 p {
     padding-left: 30px;
     padding-right: 60px;
@@ -252,6 +259,12 @@ p {
 
 .p-3 {
     padding: 3rem;
+}
+
+.nadpis {
+    margin: 10px;
+    font-size: 2rem;
+    text-align: left;
 }
 
 .list {
