@@ -13,7 +13,7 @@
 }
 
 :root {
-    --primary-color: #6883BC;
+    --primary-color: #5a7cc5;
     --secondary-color: #8A307F;
 }
 
@@ -108,6 +108,7 @@ h1 {
 
 body {
     width: auto;
+    background-color: lightsteelblue;
 }
 
 h2, h3 {
@@ -215,6 +216,7 @@ p {
     font-size: 2rem;
     margin-bottom: 1rem;
     padding-top: 2rem;
+    color: var(--secondary-color);
 }
 
 .py-1 {
@@ -265,7 +267,11 @@ p {
     margin: 10px;
     font-size: 2rem;
     text-align: left;
+    color: var(--primary-color);
+    font-weight: bold;
 }
+
+
 
 .list {
     margin: 0.5rem 0;
@@ -282,10 +288,12 @@ p {
 #historie_zajimavosti {
     display: flex;
     padding-top: 5rem;
+    
 }
 
 #historie_zajimavosti div {
     flex: 1;
+    background-color: #c7d4f0;
 }
 
 #historie_zajimavosti .historie_zajimavosti-img{
