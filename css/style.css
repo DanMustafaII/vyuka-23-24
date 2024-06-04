@@ -53,7 +53,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0.3rem;
+    padding-bottom: 0.3rem;
     position: fixed;
     position: sticky;
     top: 0;
@@ -95,6 +95,12 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+}
+
+.historie  {
+    color: var(--primary-color);
+    font-weight: bold;
+
 }
 
 table, th, td {
@@ -140,13 +146,7 @@ p {
     font-size: 1.3rem;
 }
 
-#zdroje {
-    text-align: left;
-    color: black;
-    font-size: 1rem;
-    font-family: 'Inter', sans-serif;
-    margin-bottom: 1px;
-}
+
 
 #showcase {
     background: #333 url('../img/ai-picture.jpg') no-repeat center center/cover;
@@ -356,4 +356,17 @@ table {
 .div-submit {
     padding: 0.50rem;
     padding-bottom: 5rem;
+}
+
+#zdroje {
+    text-align: left;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 1px;
+    margin-top: 2rem;
+}
+
+#footer {
+    margin-top: 2rem;
 }
