@@ -8,6 +8,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
     <title>Obrázky</title>
+
+    <script>
+        function debounce(func, wait = 20, immediate = true) {
+          var timeout;
+          return function() {
+            var context = this, args = arguments;
+            var later = function() {
+              timeout = null;
+              if (!immediate) func.apply(context, args);
+            };
+            var callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+          };
+        };
+    
+        const sliderImages = document.querySelectorAll('.slide-in');
+    
+        function checkSlide() {
+          sliderImages.forEach(sliderImage => {
+            // half way through the image
+            const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+            // bottom of the image
+            const imageBottom = sliderImage.offsetTop + sliderImage.height;
+            const isHalfShown = slideInAt > sliderImage.offsetTop;
+            const isNotScrolledPast = window.scrollY < imageBottom;
+            if (isHalfShown && isNotScrolledPast) {
+              sliderImage.classList.add('active');
+            } else {
+              sliderImage.classList.remove('active');
+            }
+          });
+        }
+    
+        window.addEventListener('scroll', debounce(checkSlide));
+    
+      </script>
+
 </head>
 <body>
     <nav id="navbar">
@@ -23,19 +62,25 @@
         </ul>
     </nav>
 
-<h1>Obrázky vytvořené umělou inteligencí</h1>
+<section id="home">
+    <div id="showcase2">
+        <div class="showcase-content">
+            <h1 class="l2-heading">Obrázky vytvořené umělou inteligencí</h1>
+        </div>
+    </div>
+</section>
 
-<div id="obrazky" >
+<div id="obrazky" class="slide-in">
     <div class="item">
-        <img src="./img/obrazek_1.jfif" alt="">
+        <img src="./img/obrazek_1.jfif" class="align-left slide-in">
         <span class="popisek">Postarší paní se svým psem na procházce</span>
     </div>
     <div class="item">
-        <img src="./img/obrazek_2.jfif" alt="">
+        <img src="./img/obrazek_2.jfif" class="align-left slide-in">
         <span class="popisek">Kovboj na koni s doutníkem</span>
     </div>
     <div class="item">
-        <img src="./img/obrazek_3.jfif" alt="">
+        <img src="./img/obrazek_3.jfif" class="align-left slide-in">
         <span class="popisek">Duch zjevující se u studenta na půdě</span>
     </div>
     <div class="item">

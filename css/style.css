@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+  }
+
 :root {
     --primary-color: #5a7cc5;
     --secondary-color: #8A307F;
@@ -97,12 +101,6 @@
     }
 }
 
-.historie  {
-    color: var(--primary-color);
-    font-weight: bold;
-
-}
-
 table, th, td {
     border: 2px solid grey;
 }
@@ -154,6 +152,22 @@ p {
 }
 
 #showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    background-color: rgba(0,0,0,.5);
+}
+
+#showcase2 {
+    background: #333 url('../img/ai-picture2.jpg') no-repeat center center/cover;
+    height: 90vh;
+}
+
+#showcase2 .showcase-content {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -267,8 +281,8 @@ p {
     margin: 10px;
     font-size: 2rem;
     text-align: left;
-    color: var(--primary-color);
-    font-weight: bold;
+    color: var(--secondary-color);
+    font-weight: bolder;
 }
 
 
@@ -283,6 +297,14 @@ p {
     border-bottom: #444 dotted 2px;
     font-family: 'Inter', sans-serif;
     font-size: 1.2rem;
+}
+
+.historie {
+    margin: 10px;
+    font-size: 2rem;
+    text-align: left;
+    color: var(--secondary-color);
+    font-weight: bolder;
 }
 
 #historie_zajimavosti {
