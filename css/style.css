@@ -285,8 +285,10 @@ p {
     font-weight: bolder;
 }
 
-
-
+.nadpis-form {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
 .list {
     margin: 0.5rem 0;
     list-style: none;
@@ -345,7 +347,7 @@ table {
 }
 
 .my-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #ffffff;
 }
 
 .my-table tr:hover {
@@ -370,10 +372,22 @@ table {
 }
 
 .myform {
-    padding: 0.7rem;
+    padding: 1rem;
     justify-content: space-between;
     font-family: 'Inter', sans-serif;
+    
 }
+
+.form {
+    display: table;
+    margin: 0 auto;
+
+}
+
+.fieldset {
+    margin: 0 auto;
+    display: table;
+  }
 
 .div-submit {
     padding: 0.50rem;
@@ -390,5 +404,7 @@ table {
 }
 
 #footer {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
 }
